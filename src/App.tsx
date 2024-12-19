@@ -19,7 +19,7 @@ function App() {
   })
 
   function updateUserInfo() {
-    // React状态是只读，更新数组或者对象应该替换而不是改变现有对象
+    // React状态是只读，所以更新数组或者对象应该替换而不是改变现有对象
     setUserInfo(prevUserInfo => { return {...prevUserInfo, age: prevUserInfo.age + 1}})
   }
 
